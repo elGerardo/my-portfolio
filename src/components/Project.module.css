@@ -1,12 +1,20 @@
-.container
+.content
 {
-    left: 0;
-    right: 0;
+    background-color: #351c51;
     backdrop-filter: blur(5px);
-    z-index: 2;
+    width: 35%;
+    margin: 5px;
+    text-align: left;
 }
 
-.container a{
+.content img
+{
+    width: 4rem;
+}
+
+.content a{
+    text-decoration: none;
+    color: white;
     background:
         linear-gradient(
         to right,
@@ -25,6 +33,6 @@
     transition: background-size 400ms;
 }
 
-.container a:hover{
+.content a:hover{
     background-size: 0 3px, 100% 3px;
 }

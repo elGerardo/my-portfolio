@@ -1,5 +1,4 @@
 import style from "./Welcome.module.css";
-import globalStyle from "../../assets/global.module.css";
 import { Link } from "react-router-dom";
 import { Container } from "react-bootstrap";
 import { motion } from "framer-motion";
@@ -39,7 +38,7 @@ let Welcome = () => {
       }}
     >
       <Container
-        className={`${globalStyle.container} d-flex justify-content-center align-items-center w-100`}
+        className={`${style.container} d-flex justify-content-center align-items-center w-100`}
       >
         <div className={`${style.content}`}>
           <p>Hi, I'm</p>

@@ -1,13 +1,29 @@
-.content img
+.container
+{
+    padding-top: 7.5%;
+}
+
+.container img
 {
     width: 40rem;
 }
 
-.content i 
+.container i 
 {
     display: block;
     font-weight: 200;
     font-size: 1.6rem;
+}
+
+.container .info
+{
+    display: flex;
+}
+
+.container .image_info,
+.container .text_info
+{
+    width: 50%;
 }
 
 .technologies
@@ -18,4 +34,39 @@
 .technologies img
 {
     width: 5rem;
+}
+
+@media only screen and (max-width: 992px)
+{
+    .container
+    {
+        padding-top: 10rem;
+    }
+
+    .container img
+    {
+        width: 30rem;
+    }
+
+    .technologies img
+    {
+        width: 5rem;
+    }
+    
+}
+
+@media only screen and (max-width: 768px)
+{
+    .container .info
+    {
+        display: block;
+    }
+
+    .container .image_info,
+    .container .text_info
+    {
+        width: 100%;
+        text-align: center;
+    }
+    
 }

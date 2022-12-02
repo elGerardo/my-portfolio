@@ -1,11 +1,10 @@
-import globalStyle from "../../assets/global.module.css";
 import style from "./AboutMe.module.css";
 import { Container } from "react-bootstrap";
 import { motion } from "framer-motion";
 import Technologies from "../../components/Technologies";
 
 //Images
-import MyPic from "../../assets/images/pic.png";
+import MyPic from "../../assets/images/pic.jpg";
 import Laravel from "../../assets/images/tec_logos/laravel.png";
 import Net from "../../assets/images/tec_logos/net.png";
 
@@ -43,13 +42,13 @@ let AboutMe = () => {
       }}
     >
       <Container
-        className={`${globalStyle.container} ${style.content} d-flex justify-content-center align-items-center w-100`}
+        className={`${style.container} d-flex justify-content-center align-items-center`}
       >
-        <div className={`d-flex ${style.info} w-100`}>
-          <div className={`w-50 text-center`}>
+        <div className={`${style.info} w-100`}>
+          <div className={`${style.image_info } text-center justify-content-center align-items-center d-flex`}>
             <img src={MyPic} />
           </div>
-          <div className={`w-50`}>
+          <div className={`${style.text_info}`}>
             <h2 className={`my-5`}>
               <b>About Me</b>
               <i>I'll promise you'll find something interesting</i>
@@ -65,25 +64,25 @@ let AboutMe = () => {
               <b>Technologies I've managed</b>
             </p>
             <div className={`${style.technologies} align-middle`}>
-              <Technologies image={Laravel} name="Laravel" color="#e32628" />
-              <Technologies image={Net} name=".Net" color="#5c2992" />
-              <Technologies image={React} name="React" color="#4cbddc" />
-              <Technologies image={Vue} name="Vue" color="#3eb883" />
-              <Technologies image={Nuxt} name="Nuxt" color="#00c590" />
+              <Technologies image="laravel" name="Laravel" color="#e32628" />
+              <Technologies image="net" name=".Net" color="#5c2992" />
+              <Technologies image="react" name="React" color="#4cbddc" />
+              <Technologies image="vue" name="Vue" color="#3eb883" />
+              <Technologies image="nuxt" name="Nuxt" color="#00c590" />
               <Technologies
-                image={Bootstrap}
+                image="bootstrap"
                 name="Bootstrap"
                 color="#8809fb"
               />
-              <Technologies image={Mysql} name="MySQL" color="#d18434" />
+              <Technologies image="mysql" name="MySQL" color="#d18434" />
               <Technologies
-                image={Sqlserver}
+                image="sqlserver"
                 name="SQLServer"
                 color="#b2233f"
               />
-              <Technologies image={Figma} name="Figma" color="#02d084" />
+              <Technologies image="figma" name="Figma" color="#f24d18" />
               <Technologies
-                image={Photoshop}
+                image="photoshop"
                 name="Photoshop"
                 color="#2caafd"
               />

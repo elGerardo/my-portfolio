@@ -1,0 +1,15 @@
+.container
+{
+    padding-top: 7.5%;
+    padding-bottom: 1rem;
+}
+
+.container i
+{
+    font-weight: 200;
+}
+
+.item
+{
+    height: fit-content;
+}

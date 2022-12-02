@@ -1,3 +1,8 @@
+.container
+{
+    height: 100vh;
+}
+
 .dash_down a{
     text-decoration: none;
     color: white;
