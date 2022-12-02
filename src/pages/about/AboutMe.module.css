@@ -1,0 +1,21 @@
+.content img
+{
+    width: 40rem;
+}
+
+.content i 
+{
+    display: block;
+    font-weight: 200;
+    font-size: 1.6rem;
+}
+
+.technologies
+{
+    width: fit-content;
+}
+
+.technologies img
+{
+    width: 5rem;
+}

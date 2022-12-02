@@ -1,15 +1,15 @@
-.container
-{
-    height: 100vh;
+.dash_down a{
+    text-decoration: none;
+    color: white;
 }
 
-.my_name
+.dash_down
 {
     position: relative;
     z-index: 2;
 }
 
-.my_name span
+.dash_down span
 {
     position: absolute;
     z-index: -1;
@@ -21,17 +21,17 @@
     background: rgb(28, 15, 43);
 }
 
-.container h1
+.content h1
 {
     font-size: 6rem;
 }
 
-.container p
+.content p
 {
     font-size: 2.4rem;
 } 
 
-.container img
+.content img
 {
     width: 2.5rem;
     margin: 0 1.2rem 0 0;

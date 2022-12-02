@@ -1,40 +1,51 @@
 import style from "./Welcome.module.css";
+import globalStyle from "../../assets/global.module.css";
+import { Link } from "react-router-dom";
 import { Container } from "react-bootstrap";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
+import { faCaretRight } from "@fortawesome/free-solid-svg-icons";
 import Github from "../../assets/images/github.png";
 import CV from "../../assets/images/cv.png";
 import Instagram from "../../assets/images/instagram.png";
 import Pdf from "../../assets/files/CV.pdf";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 let Welcome = () => {
   let [skills, setSkills] = useState("Developer");
   let [countSkill, setCountSkill] = useState("");
 
-  useEffect(() => {
-  }, [])
+  useEffect(() => {}, []);
 
   let content = (
     <motion.div
       key="welcome"
-      initial={{ opacity: 0, y: -200 }}
+      initial={{ opacity: 0, x: -200 }}
       transition={{ y: { duration: 0.5 } }}
       animate={{
-        y: 0,
+        x: 0,
         opacity: 1,
         transition: {
           duration: 0.5,
-          delay: 0.6,
+          delay: 0.5,
         },
       }}
-      exit={{ opacity: 0, y: 200 }}
+      exit={{
+        opacity: 0,
+        x: 200,
+        transition: {
+          duration: 0.5,
+        },
+      }}
     >
       <Container
-        className={`${style.container} d-flex justify-content-center align-items-center w-100`}
+        className={`${globalStyle.container} d-flex justify-content-center align-items-center w-100`}
       >
-        <div>
+        <div className={`${style.content}`}>
           <p>Hi, I'm</p>
-          <h1 className={`${style.my_name}`}><span></span>Gerardo Villalobos</h1>
+          <h1 className={`${style.dash_down}`}>
+            <span></span>Gerardo Villalobos
+          </h1>
           <p>and I'm Developer, Creative and Innovator ;)</p>
           <div>
             <a
@@ -55,8 +66,25 @@ let Welcome = () => {
               <img src={CV} alt="cvpic" />
             </a>
           </div>
-          <div className={`${style.take_trip} d-flex justify-content-center align-items-center`}>
-            <p>Go</p>
+          <div
+            className={`${style.take_trip} d-flex justify-content-center align-items-center`}
+          >
+            <motion.div
+              whileHover={{
+                x: 10,
+              }}
+              transition={{
+                type: "spring",
+              }}
+            >
+              <p className={`p-0 m-0 ${style.dash_down}`}>
+                <span></span>
+                <Link to="about">
+                  Let's take the trip
+                  <FontAwesomeIcon className={`mx-3`} icon={faCaretRight} />
+                </Link>
+              </p>
+            </motion.div>
           </div>
         </div>
       </Container>
