@@ -1,0 +1,30 @@
+.container
+{
+    left: 0;
+    right: 0;
+    backdrop-filter: blur(5px);
+    z-index: 2;
+}
+
+.container a{
+    background:
+        linear-gradient(
+        to right,
+        #17202900,
+        #17202900
+        ),
+        linear-gradient(
+        to right,
+        white,
+        white,
+        white
+    );
+    background-size: 100% 3px, 0 3px;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 400ms;
+}
+
+.container a:hover{
+    background-size: 0 3px, 100% 3px;
+}

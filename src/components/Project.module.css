@@ -1,0 +1,59 @@
+.content
+{
+    transition: all 0.3s ease-in-out;
+    background-color: rgba(0, 0, 0, 0.150);
+    backdrop-filter: blur(5px);
+    width: 45%;
+    margin: 1.5rem;
+    text-align: left;
+}
+
+.content:hover
+{
+    background-color: rgba(0, 0, 0, 0.300);
+}
+
+.content img
+{
+    width: 4rem;
+}
+
+.content a{
+    text-decoration: none;
+    color: white;
+    background:
+        linear-gradient(
+        to right,
+        #17202900,
+        #17202900
+        ),
+        linear-gradient(
+        to right,
+        white,
+        white,
+        white
+    );
+    background-size: 100% 3px, 0 3px;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 400ms;
+}
+
+.content a:hover{
+    background-size: 0 3px, 100% 3px;
+}
+
+.github_url img
+{
+    width: 2.5rem;
+}
+
+@media only screen and (max-width: 760px)
+{
+    .content
+    {
+        margin: 1.5rem 0;
+        width: 100%;
+    }
+    
+}

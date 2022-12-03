@@ -1,0 +1,48 @@
+.container
+{
+    height: 82.5vh;
+}
+
+.dash_down a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.dash_down
+{
+    position: relative;
+    z-index: 2;
+}
+
+.dash_down span
+{
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 30%;
+    background: rgb(4, 24, 12);
+}
+
+.content h1
+{
+    font-size: 6rem;
+}
+
+.content p
+{
+    font-size: 2.4rem;
+} 
+
+.content img
+{
+    width: 2.5rem;
+    margin: 0 1.2rem 0 0;
+}
+
+.take_trip
+{
+    margin: 10rem 0 0 0;
+}
