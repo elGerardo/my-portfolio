@@ -44,11 +44,11 @@ let AboutMe = () => {
       <Container
         className={`${style.container} d-flex justify-content-center align-items-center`}
       >
-        <div className={`${style.info} w-100`}>
+        <div className={`${style.info} my-5 w-100`}>
           <div className={`${style.image_info } text-center justify-content-center align-items-center d-flex`}>
             <img src={MyPic} />
           </div>
-          <div className={`${style.text_info}`}>
+          <div className={`${style.text_info} shadow-lg rounded p-3`}>
             <h2 className={`my-5`}>
               <b>About Me</b>
               <i>I'll promise you'll find something interesting</i>

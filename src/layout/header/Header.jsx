@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 let Header = () => {
     let content = (
-        <Container className={`${style.container} py-3 w-100 position-fixed d-flex justify-content-around`}>
+        <Container className={`${style.container} py-3 w-75 position-fixed d-flex justify-content-between`}>
             <Link to="/" style={{color:"#FFFFFF", textDecoration:"none"}}><h1>Gerardo</h1></Link>
             <div>
                 <Link to="about" style={{color:"#FFFFFF", textDecoration:"none"}}>about me</Link>

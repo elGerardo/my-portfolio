@@ -45,6 +45,7 @@ let Projects = () => {
           </h2>
           <Project
             img={Portfolio}
+            description="My cool portfolio done with React using Boostrap React and Framer Motion for the transitions."
             title="My Portfolio"
             app_url="https://gerardovillalobos.netlify.app/"
             github_url="https://github.com/elGerardo/my-portfolio"
@@ -59,21 +60,23 @@ let Projects = () => {
           <Project
             img={SCPAPI}
             title="SCP API"
+            description="API based on the SCP Foundation monsters, the API doc was done with Nuxt/Vue and the backend with Laravel."
             app_url="https://scpapidoc.netlify.app/"
             github_url="https://github.com/elGerardo/SCP-API"
           >
-            <Technologies image="Laravel" name="Laravel" color="#e32628" />
-            <Technologies image="mysql" name="MySQL" color="#d18434" />
             <Technologies image="nuxt" name="Nuxt" color="#00c590" />
             <Technologies
               image="bootstrap_vue"
               name="Bootstrap Vue"
               color="#00c590"
             />
+            <Technologies image="Laravel" name="Laravel" color="#e32628" />
+            <Technologies image="mysql" name="MySQL" color="#d18434" />
           </Project>
           <Project
             img={Weather}
-            title="Wheater App"
+            description="A simple wheater app done with Vue consuming the Open Weather API."
+            title="Weather App"
             app_url="https://mycoolwheaterapp.netlify.app/"
             github_url="https://github.com/elGerardo/weather-app"
           >

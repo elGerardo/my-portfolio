@@ -1,11 +1,11 @@
 .container
 {
-    height: 100vh;
+    height: 82.5vh;
 }
 
 .dash_down a{
     text-decoration: none;
-    color: white;
+    color: #FFFFFF;
 }
 
 .dash_down
@@ -22,8 +22,8 @@
     right: 0;
     bottom: 0;
     width: 100%;
-    height: 40%;
-    background: rgb(28, 15, 43);
+    height: 30%;
+    background: rgb(4, 24, 12);
 }
 
 .content h1

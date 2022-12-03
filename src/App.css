@@ -7,9 +7,8 @@ html{
 
 body {
   color: #FFFFFF;
-  background: rgb(53,28,81);
-  background: linear-gradient(126deg, rgba(53,28,81,1) 0%, rgba(57,0,166,1) 100%); 
-  -webkit-background-size: cover;
+  background: rgb(28,168,87);
+  background: linear-gradient(51deg, rgba(28,168,87,1) 0%, rgba(0,38,97,1) 100%); -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;

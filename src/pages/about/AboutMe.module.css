@@ -20,6 +20,12 @@
     display: flex;
 }
 
+.container .text_info
+{
+    background-color: rgba(0, 0, 0, 0.150);
+    color: white;
+}
+
 .container .image_info,
 .container .text_info
 {
