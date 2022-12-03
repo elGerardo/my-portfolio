@@ -46,3 +46,11 @@
 {
     margin: 10rem 0 0 0;
 }
+
+@media only screen and (max-width: 770px)
+{
+    .container
+    {
+        padding-top: 1.5rem;
+    }
+}

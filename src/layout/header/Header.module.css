@@ -3,7 +3,13 @@
     left: 0;
     right: 0;
     backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
     z-index: 2;
+}
+
+.content
+{
+    width: 75%;
 }
 
 .container a{
@@ -27,4 +33,12 @@
 
 .container a:hover{
     background-size: 0 3px, 100% 3px;
+}
+
+@media only screen and (max-width: 620px)
+{
+    .content
+    {
+        width: 100%;
+    }
 }
