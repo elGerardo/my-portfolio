@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
 import Github from "/images/github.png";
 import Instagram from "/images/instagram.png";
-import CV from "/images/CV.png";
+import CV from "/images/cv.png";
 import Pdf from "../../assets/files/CV.pdf";
 
 let Footer = () => {
