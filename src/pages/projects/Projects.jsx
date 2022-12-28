@@ -3,15 +3,12 @@ import { Container } from "react-bootstrap";
 import style from "./Projects.module.css";
 import Project from "../../components/Project";
 import Technologies from "../../components/Technologies";
-//images
-import Portfolio from "../../assets/images/portfolio.png";
-import SCPAPI from "../../assets/images/scp_api_doc.png";
-import Weather from "../../assets/images/weather_app.png";
 
-//techs
-import React from "../../assets/images/tec_logos/react.png";
-import Laravel from "../../assets/images/tec_logos/laravel.png";
-import Vue from "../../assets/images/tec_logos/vue.png";
+//images
+import Portfolio from "/images/portfolio.png";
+import SCPAPI from "/images/scp_api_doc.png";
+import Weather from "/images/weather_app.png";
+import ToDo from "/images/todo_app.png";
 
 let Projects = () => {
   let content = (
@@ -81,6 +78,31 @@ let Projects = () => {
             github_url="https://github.com/elGerardo/weather-app"
           >
             <Technologies image="vue" name="Vue" color="#3eb883" />
+          </Project>
+          <Project
+            img={ToDo}
+            description="A ToDo App where you can store yor notes or list of task To do. The App is done with React as Frontend using Bootstrap React with ExpressJs/NodeJs as Backend using TypeScript instead JavaScript and with MySQL as database."
+            title="ToDo App"
+            app_url="https://mycooltodoapp.netlify.app/"
+            github_url="https://github.com/elGerardo/todo-app"
+          >
+            <Technologies image="react" name="React" color="#4cbddc" />
+            <Technologies
+              image="bootstrap_react"
+              name="Bootstrap React"
+              color="#4cbddc"
+            />
+            <Technologies
+              image="express_node"
+              name="ExpressJs/NodeJs"
+              color="#84ce24"
+            />
+            <Technologies
+              image="typescript"
+              name="TypeScript"
+              color="#007acc"
+            />
+            <Technologies image="mysql" name="MySQL" color="#d18434" />
           </Project>
         </div>
       </Container>

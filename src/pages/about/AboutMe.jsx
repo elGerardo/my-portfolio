@@ -4,20 +4,19 @@ import { motion } from "framer-motion";
 import Technologies from "../../components/Technologies";
 
 //Images
-import MyPic from "../../assets/images/pic.jpg";
-import Laravel from "../../assets/images/tec_logos/laravel.png";
-import Net from "../../assets/images/tec_logos/net.png";
+import MyPic from "/images/pic.jpg";
+import Laravel from "/images/tec_logos/laravel.png";
 
-import React from "../../assets/images/tec_logos/react.png";
-import Nuxt from "../../assets/images/tec_logos/nuxt.png";
-import Vue from "../../assets/images/tec_logos/vue.png";
-import Bootstrap from "../../assets/images/tec_logos/bootstrap.png";
+import React from "/images/tec_logos/react.png";
+import Nuxt from "/images/tec_logos/nuxt.png";
+import Vue from "/images/tec_logos/vue.png";
+import Bootstrap from "/images/tec_logos/bootstrap.png";
 
-import Mysql from "../../assets/images/tec_logos/mysql.png";
-import Sqlserver from "../../assets/images/tec_logos/sqlserver.png";
+import Mysql from "/images/tec_logos/mysql.png";
+import Sqlserver from "/images/tec_logos/sqlserver.png";
 
-import Figma from "../../assets/images/tec_logos/figma.png";
-import Photoshop from "../../assets/images/tec_logos/photoshop.png";
+import Figma from "/images/tec_logos/figma.png";
+import Photoshop from "/images/tec_logos/photoshop.png";
 
 let AboutMe = () => {
   let content = (
@@ -45,7 +44,9 @@ let AboutMe = () => {
         className={`${style.container} d-flex justify-content-center align-items-center`}
       >
         <div className={`${style.info} my-5 w-100`}>
-          <div className={`${style.image_info } text-center justify-content-center align-items-center d-flex`}>
+          <div
+            className={`${style.image_info} text-center justify-content-center align-items-center d-flex`}
+          >
             <img src={MyPic} />
           </div>
           <div className={`${style.text_info} shadow-lg rounded p-3`}>
@@ -65,10 +66,19 @@ let AboutMe = () => {
             </p>
             <div className={`${style.technologies} align-middle`}>
               <Technologies image="laravel" name="Laravel" color="#e32628" />
-              <Technologies image="net" name=".Net" color="#5c2992" />
+              <Technologies
+                image="express_node"
+                name="ExpressJs/NodeJs"
+                color="#84ce24"
+              />
               <Technologies image="react" name="React" color="#4cbddc" />
               <Technologies image="vue" name="Vue" color="#3eb883" />
               <Technologies image="nuxt" name="Nuxt" color="#00c590" />
+              <Technologies
+                image="typescript"
+                name="TypeScript"
+                color="#007acc"
+              />
               <Technologies
                 image="bootstrap"
                 name="Bootstrap"

@@ -4,9 +4,9 @@ import { Container } from "react-bootstrap";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { faCaretRight } from "@fortawesome/free-solid-svg-icons";
-import Github from "../../assets/images/github.png";
-import CV from "../../assets/images/cv.png";
-import Instagram from "../../assets/images/instagram.png";
+import Github from "/images/github.png";
+import CV from "/images/cv.png";
+import Instagram from "/images/instagram.png";
 import Pdf from "../../assets/files/CV.pdf";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 

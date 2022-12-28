@@ -1,6 +1,6 @@
 import style from "./Project.module.css";
-import React from "../assets/images/tec_logos/react.png";
-import Github from "../assets/images/github.png";
+import React from "/images/tec_logos/react.png";
+import Github from "/images/github.png";
 let Project = (props) => {
   let content = (
     <div className={`${style.content} d-inline-block p-3 align-middle shadow rounded`}>
