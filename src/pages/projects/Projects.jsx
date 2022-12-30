@@ -81,7 +81,7 @@ let Projects = () => {
           </Project>
           <Project
             img={ToDo}
-            description="A ToDo App where you can store yor notes or list of task To do. The App is done with React as Frontend using Bootstrap React with ExpressJs/NodeJs as Backend using TypeScript instead JavaScript and with MySQL as database."
+            description="A ToDo App where you can store your notes or lists of task To do. The App is done with React as Frontend using Bootstrap React with ExpressJs/NodeJs as Backend using TypeScript instead JavaScript and MySQL as database."
             title="ToDo App"
             app_url="https://mycooltodoapp.netlify.app/"
             github_url="https://github.com/elGerardo/todo-app"

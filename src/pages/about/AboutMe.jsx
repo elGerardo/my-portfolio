@@ -4,19 +4,7 @@ import { motion } from "framer-motion";
 import Technologies from "../../components/Technologies";
 
 //Images
-import MyPic from "/images/pic.jpg";
-import Laravel from "/images/tec_logos/laravel.png";
-
-import React from "/images/tec_logos/react.png";
-import Nuxt from "/images/tec_logos/nuxt.png";
-import Vue from "/images/tec_logos/vue.png";
-import Bootstrap from "/images/tec_logos/bootstrap.png";
-
-import Mysql from "/images/tec_logos/mysql.png";
-import Sqlserver from "/images/tec_logos/sqlserver.png";
-
-import Figma from "/images/tec_logos/figma.png";
-import Photoshop from "/images/tec_logos/photoshop.png";
+import MyPic from "/images/pic.png";
 
 let AboutMe = () => {
   let content = (
