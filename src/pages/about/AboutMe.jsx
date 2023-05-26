@@ -54,6 +54,7 @@ let AboutMe = () => {
             </p>
             <div className={`${style.technologies} align-middle`}>
               <Technologies image="laravel" name="Laravel" color="#e32628" />
+              <Technologies image="adonis" name="Adonis JS" color="#5A45FF" />
               <Technologies
                 image="express_node"
                 name="ExpressJs/NodeJs"
