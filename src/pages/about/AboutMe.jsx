@@ -35,7 +35,7 @@ let AboutMe = () => {
           <div
             className={`${style.image_info} text-center justify-content-center align-items-center d-flex`}
           >
-            <img src={MyPic} />
+            <img src={MyPic} className={`${style.image} shadow-lg rounded-circle`} />
           </div>
           <div className={`${style.text_info} shadow-lg rounded p-3`}>
             <h2 className={`my-5`}>
@@ -75,9 +75,9 @@ let AboutMe = () => {
               />
               <Technologies image="mysql" name="MySQL" color="#d18434" />
               <Technologies
-                image="sqlserver"
-                name="SQLServer"
-                color="#b2233f"
+                image="postgres"
+                name="Postgres"
+                color="#2F6792"
               />
               <Technologies image="figma" name="Figma" color="#f24d18" />
               <Technologies

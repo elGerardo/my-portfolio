@@ -2,7 +2,6 @@ import style from "./Welcome.module.css";
 import { Link } from "react-router-dom";
 import { Container } from "react-bootstrap";
 import { motion } from "framer-motion";
-import { useEffect, useState } from "react";
 import { faCaretRight } from "@fortawesome/free-solid-svg-icons";
 import Github from "/images/github.png";
 import CV from "/images/cv.png";
@@ -11,10 +10,6 @@ import Pdf from "../../assets/files/CV.pdf";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 let Welcome = () => {
-  let [skills, setSkills] = useState("Developer");
-  let [countSkill, setCountSkill] = useState("");
-
-  useEffect(() => {}, []);
 
   let content = (
     <motion.div
@@ -51,6 +46,7 @@ let Welcome = () => {
               href="https://github.com/elGerardo"
               target="_blank"
               rel="noopener noreferrer"
+              className={`${style.social_link}`}
             >
               <img src={Github} alt="githubpic" />
             </a>
@@ -58,10 +54,16 @@ let Welcome = () => {
               href="https://www.instagram.com/ggerardius/"
               target="_blank"
               rel="noopener noreferrer"
+              className={`${style.social_link}`}
             >
               <img src={Instagram} alt="instagrampic" />
             </a>
-            <a href={Pdf} target="_blank" rel="noopener noreferrer">
+            <a
+              href={Pdf}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`${style.social_link}`}
+            >
               <img src={CV} alt="cvpic" />
             </a>
           </div>

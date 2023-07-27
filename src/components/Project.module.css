@@ -3,7 +3,7 @@
     transition: all 0.3s ease-in-out;
     background-color: rgba(0, 0, 0, 0.150);
     backdrop-filter: blur(5px);
-    width: 45%;
+    width: 65%;
     margin: 1.5rem;
     text-align: left;
 }

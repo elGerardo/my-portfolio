@@ -35,25 +35,11 @@ let Projects = () => {
       <Container className={`${style.container} w-100`}>
         <div className={`${style.item} text-center`}>
           <h2>
-            My Projects{" "}
+            My Projects
             <i className={`d-block font-italic font-weight-light`}>
               Here is my job
             </i>
           </h2>
-          <Project
-            img={Portfolio}
-            description="My cool portfolio done with React using Boostrap React and Framer Motion for the transitions."
-            title="My Portfolio"
-            app_url="https://gerardovillalobos.netlify.app/"
-            github_url="https://github.com/elGerardo/my-portfolio"
-          >
-            <Technologies image="react" name="React" color="#4cbddc" />
-            <Technologies
-              image="bootstrap_react"
-              name="Bootstrap React"
-              color="#4cbddc"
-            />
-          </Project>
           <Project
             img={SCPAPI}
             title="SCP API"
@@ -103,6 +89,20 @@ let Projects = () => {
               color="#007acc"
             />
             <Technologies image="mysql" name="MySQL" color="#d18434" />
+          </Project>
+          <Project
+            img={Portfolio}
+            description="My cool portfolio done with React using Boostrap React and Framer Motion for the transitions."
+            title="My Portfolio"
+            app_url="https://gerardovillalobos.netlify.app/"
+            github_url="https://github.com/elGerardo/my-portfolio"
+          >
+            <Technologies image="react" name="React" color="#4cbddc" />
+            <Technologies
+              image="bootstrap_react"
+              name="Bootstrap React"
+              color="#4cbddc"
+            />
           </Project>
         </div>
       </Container>
