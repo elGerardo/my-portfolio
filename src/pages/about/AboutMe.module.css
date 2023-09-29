@@ -1,84 +1,90 @@
-.container
-{
+.container {
     padding-top: 5%;
 }
 
-.container img
-{
+.container img {
     width: 30rem;
 }
 
-.container i 
-{
+.container i {
     display: block;
     font-weight: 200;
     font-size: 1.6rem;
 }
 
-.container .info
-{
+.container .info {
     display: flex;
 }
 
-.container .text_info
-{
+.container .text_info {
     background-color: rgba(0, 0, 0, 0.150);
     color: white;
 }
 
-.container .image_info,
-.container .text_info
-{
-    width: 50%;
+.image_info {
+    width: 40%;
+}
+
+.text_info {
+    width: 60%;
 }
 
 .image {
     background-color: rgba(0, 0, 0, 0.150);
+    margin-top: -30rem;
+    position: fixed;
 }
 
-.technologies
-{
+.technologies {
     width: fit-content;
 }
 
-.technologies img
-{
+.technologies img {
     width: 5rem;
 }
 
-@media only screen and (max-width: 992px)
-{
-    .container
-    {
+@media only screen and (max-width: 1200px) {
+    .image {
+        margin-top: -40rem;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .container {
         padding-top: 5rem;
     }
 
-    .container img
-    {
+    .container img {
         width: 25rem;
         margin-bottom: 2.5rem;
     }
 
-    .technologies img
-    {
+    .image {
+        margin-top: -60rem;
+    }
+
+    .technologies img {
         width: 5rem;
         margin: 0;
     }
-    
+
+
 }
 
-@media only screen and (max-width: 768px)
-{
-    .container .info
-    {
+@media only screen and (max-width: 768px) {
+    .container .info {
         display: block;
     }
 
     .container .image_info,
-    .container .text_info
-    {
+    .container .text_info {
         width: 100%;
         text-align: center;
     }
-    
+
+    .image {
+        margin-top: 0rem;
+        position: relative;
+    }
+
 }

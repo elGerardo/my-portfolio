@@ -40,7 +40,7 @@ let Welcome = () => {
           <h1 className={`${style.dash_down}`}>
             <span></span>Gerardo Villalobos
           </h1>
-          <p>and I'm Developer, Creative and Innovator ;)</p>
+          <p>and I'm FullStack Developer ;)</p>
           <div>
             <a
               href="https://github.com/elGerardo"

@@ -5,6 +5,7 @@ import Technologies from "../../components/Technologies";
 
 //Images
 import MyPic from "/images/pic.png";
+import Jobs from "../../components/Jobs";
 
 let AboutMe = () => {
   let content = (
@@ -35,7 +36,10 @@ let AboutMe = () => {
           <div
             className={`${style.image_info} text-center justify-content-center align-items-center d-flex`}
           >
-            <img src={MyPic} className={`${style.image} shadow-lg rounded-circle`} />
+            <img
+              src={MyPic}
+              className={`${style.image} shadow-lg rounded-circle`}
+            />
           </div>
           <div className={`${style.text_info} shadow-lg rounded p-3`}>
             <h2 className={`my-5`}>
@@ -43,12 +47,30 @@ let AboutMe = () => {
               <i>I'll promise you'll find something interesting</i>
             </h2>
             <p>
-              I'm a young student of 22 years, I am currently studying of
-              Technologies of Information at the area of Multiplatform Develop
-              Software at Universidad Tecnológica de Tijuana. I consider myself
-              a self-taught person who enjoys what he does, because I really
-              enjoy the world of software development.
+              I am a young software engineer who is enthusiastic about the world
+              of development, design and a lover of cats. I graduated from the
+              Universidad Tecnológica de Tijuana. I began my professional life
+              before finishing my degree because I had and continue to have the
+              opportunity to work on technology projects that challenge me to
+              continue growing and allow me to demonstrate my skills.
             </p>
+            <p>
+              <b>Proffesional Experience</b>
+            </p>
+            <div>
+              <Jobs
+                image="bajadevelopers"
+                jobTitle="BajaDevelopers"
+                title="Sept/2021 - Jul/2022"
+                description="FullStack Developer"
+              />
+              <Jobs
+                image="multitaskr"
+                jobTitle="Multitaskr"
+                title="Sept/2022 - Currently"
+                description="Backend Developer"
+              />
+            </div>
             <p>
               <b>Technologies I've managed</b>
             </p>
@@ -74,11 +96,7 @@ let AboutMe = () => {
                 color="#8809fb"
               />
               <Technologies image="mysql" name="MySQL" color="#d18434" />
-              <Technologies
-                image="postgres"
-                name="Postgres"
-                color="#2F6792"
-              />
+              <Technologies image="postgres" name="Postgres" color="#2F6792" />
               <Technologies image="figma" name="Figma" color="#f24d18" />
               <Technologies
                 image="photoshop"
