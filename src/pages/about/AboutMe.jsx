@@ -83,7 +83,6 @@ let AboutMe = () => {
                 color="#84ce24"
               />
               <Technologies image="react" name="React" color="#4cbddc" />
-              <Technologies image="vue" name="Vue" color="#3eb883" />
               <Technologies image="nuxt" name="Nuxt" color="#00c590" />
               <Technologies
                 image="typescript"
