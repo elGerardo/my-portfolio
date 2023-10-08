@@ -3,28 +3,33 @@ import { Link } from "react-router-dom";
 import { Container } from "react-bootstrap";
 import { motion } from "framer-motion";
 import { faCaretRight } from "@fortawesome/free-solid-svg-icons";
-import Github from "/images/github.png";
-import CV from "/images/cv.png";
-import Instagram from "/images/instagram.png";
-import Pdf from "../../assets/files/CV.pdf";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import useSwipe from "../../hooks/useSwipe";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { useLocation } from "react-router";
 
+//files
+import Pdf from "../../assets/files/CV.pdf";
+
+//images
+import Github from "/images/github.png";
+import CV from "/images/cv.png";
+import Instagram from "/images/instagram.png";
+import Linkedin from "/images/linkedin.png";
+
 const Welcome = () => {
   const [initialX] = useState(
-    useLocation().state !== null ? useLocation().state.initialX : -200 
-    )
-    
+    useLocation().state !== null ? useLocation().state.initialX : -200
+  );
+
   const navigate = useNavigate();
-  const [exitX, setExitX] = useState(200)
+  const [exitX, setExitX] = useState(200);
   const { onTouchEnd, onTouchMove, onTouchStart } = useSwipe();
 
   const [goTo] = useState({
     left: () => {
-      setExitX(-200)
+      setExitX(-200);
       navigate("/about", {
         state: {
           initialX: 200,
@@ -32,7 +37,7 @@ const Welcome = () => {
       });
     },
     right: () => {
-      setExitX(200)
+      setExitX(200);
       navigate("/projects", {
         state: {
           initialX: -200,
@@ -85,6 +90,22 @@ const Welcome = () => {
             <p>and I'm FullStack Developer ;)</p>
             <div>
               <a
+                href="https://linkedin.com/in/gerardo-villalobos-gamiño"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`${style.social_link}`}
+              >
+                <img src={Linkedin} alt="linkedin" />
+              </a>
+              <a
+                href={Pdf}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`${style.social_link}`}
+              >
+                <img src={CV} alt="cvpic" />
+              </a>
+              <a
                 href="https://github.com/elGerardo"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -99,14 +120,6 @@ const Welcome = () => {
                 className={`${style.social_link}`}
               >
                 <img src={Instagram} alt="instagrampic" />
-              </a>
-              <a
-                href={Pdf}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={`${style.social_link}`}
-              >
-                <img src={CV} alt="cvpic" />
               </a>
             </div>
             <div
