@@ -8,7 +8,6 @@ import useSwipe from "../../hooks/useSwipe";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { useLocation } from "react-router";
-import { useEffect } from "react";
 
 //files
 import Pdf from "../../assets/files/CV.pdf";
@@ -53,11 +52,6 @@ const Welcome = () => {
     const direction = onTouchEnd();
     goTo[direction]();
   };
-  
-  useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
-
 
   const content = (
     <div

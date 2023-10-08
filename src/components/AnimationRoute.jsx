@@ -7,6 +7,8 @@ import AboutMe from "../pages/about/AboutMe.jsx"
 import Projects from "../pages/projects/Projects.jsx";
 
 const AnimationRoute = () => {
+  window.scrollTo(0, 0)
+  
   const location = useLocation();
 
   const content = (
