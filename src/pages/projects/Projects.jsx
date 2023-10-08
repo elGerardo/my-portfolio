@@ -7,6 +7,7 @@ import { useLocation } from "react-router";
 import { useState } from "react";
 import { useNavigate } from "react-router";
 import useSwipe from "../../hooks/useSwipe";
+import { useEffect } from "react";
 
 //images
 import Portfolio from "/images/portfolio.png";
@@ -47,6 +48,10 @@ const Projects = () => {
     const direction = onTouchEnd();
     goTo[direction]();
   };
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
 
   const content = (
     <div

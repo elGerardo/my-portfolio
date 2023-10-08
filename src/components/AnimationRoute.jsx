@@ -6,10 +6,10 @@ import Welcome from "../pages/welcome/Welcome.jsx";
 import AboutMe from "../pages/about/AboutMe.jsx"
 import Projects from "../pages/projects/Projects.jsx";
 
-let AnimationRoute = () => {
-  let location = useLocation();
+const AnimationRoute = () => {
+  const location = useLocation();
 
-  let content = (
+  const content = (
     <AnimatePresence>
       <Routes location={location} key={location.pathname}>
         <Route index element={<Welcome />} />

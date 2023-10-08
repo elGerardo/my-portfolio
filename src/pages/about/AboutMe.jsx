@@ -6,6 +6,7 @@ import { useLocation } from "react-router";
 import { useState } from "react";
 import { useNavigate } from "react-router";
 import useSwipe from "../../hooks/useSwipe";
+import { useEffect } from "react";
 
 //Images
 import MyPic from "/images/pic.png";
@@ -39,6 +40,10 @@ const AboutMe = () => {
     null: () => {},
     undefined: () => {},
   });
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
 
   const handleOnTouchEnd = () => {
     const direction = onTouchEnd();
