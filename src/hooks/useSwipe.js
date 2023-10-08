@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const useSwipe = (minSwipeDistance = 75) => {
+const useSwipe = (minSwipeDistance = 125) => {
   const [touchStart, setTouchStart] = useState(null);
   const [touchEnd, setTouchEnd] = useState(null);
 
