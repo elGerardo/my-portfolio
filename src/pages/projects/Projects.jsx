@@ -55,8 +55,8 @@ const Projects = () => {
             img={ToDo}
             description="A ToDo App where you can store your notes or lists of task To do. The App is done with React as Frontend using Bootstrap React with ExpressJs/NodeJs as Backend using TypeScript instead JavaScript and MySQL as database."
             title="ToDo App"
-            app_url="https://mycooltodoapp.netlify.app/"
-            github_url="https://github.com/elGerardo/todo-app"
+            app_url="https://mytodoappcool.netlify.app/"
+            github_url="https://github.com/elGerardo/py-todo-app-v2"
           >
             <Technologies image="nextjs" name="NextJs" color="#000000" />
             <Technologies image="bootstrap" name="Bootstrap" color="#8809fb" />
