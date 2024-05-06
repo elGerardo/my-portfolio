@@ -59,15 +59,15 @@ const AboutMe = () => {
             </p>
             <div>
               <Jobs
-                image="bajadevelopers"
-                jobTitle="BajaDevelopers"
-                title="Sept/2021 - Jul/2022"
+                image="multitaskr"
+                jobTitle="Multitaskr"
+                title="Sept/2022 - Currently"
                 description="FullStack Developer"
               />
               <Jobs
-                image="multitaskr"
-                jobTitle="Multitaskr"
-                title="Sept/2022 - Jan/2024"
+                image="bajadevelopers"
+                jobTitle="BajaDevelopers"
+                title="Sept/2021 - Jul/2022"
                 description="FullStack Developer"
               />
             </div>
@@ -90,6 +90,7 @@ const AboutMe = () => {
                 name="Bootstrap"
                 color="#8809fb"
               />
+              <Technologies image="tailwind" name="Tailwind" color="#35BEF8" />
               <Technologies image="mysql" name="MySQL" color="#d18434" />
               <Technologies image="postgres" name="Postgres" color="#2F6792" />
             </div>

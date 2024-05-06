@@ -42,26 +42,26 @@ const Projects = () => {
           <Project
             img={SCPAPI}
             title="SCP API"
-            description="API based on the SCP Foundation monsters, the API doc was done with Nuxt/Vue and the backend with Laravel."
-            app_url="https://scpapidoc.netlify.app/"
-            github_url="https://github.com/elGerardo/SCP-API"
+            description="API based on the SCP Foundation monsters, the API doc was done with NextJs/React and the backend with Laravel."
+            app_url="https://scpapi.netlify.app/"
+            github_url="https://github.com/elGerardo/scp_api_v1"
           >
-            <Technologies image="nuxt" name="Nuxt" color="#00c590" />
-            <Technologies image="bootstrap" name="Bootstrap" color="#8809fb" />
+            <Technologies image="nextjs" name="NextJs" color="#000000" />
             <Technologies image="Laravel" name="Laravel" color="#e32628" />
             <Technologies image="mysql" name="MySQL" color="#d18434" />
+            <Technologies image="tailwind" name="Tailwind" color="#35BEF8" />
           </Project>
           <Project
             img={ToDo}
-            description="A ToDo App where you can store your notes or lists of task To do. The App is done with React as Frontend using Bootstrap React with ExpressJs/NodeJs as Backend using TypeScript instead JavaScript and MySQL as database."
+            description="A Board App where you can store your tasks. The App is done with NextJs/React as Frontend using Tailwind with Python as Backend."
             title="ToDo App"
-            app_url="https://mytodoappcool.netlify.app/"
-            github_url="https://github.com/elGerardo/py-todo-app-v2"
+            app_url="https://myboardapp.netlify.app/"
+            github_url="https://github.com/elGerardo/trello_clone_app"
           >
             <Technologies image="nextjs" name="NextJs" color="#000000" />
-            <Technologies image="bootstrap" name="Bootstrap" color="#8809fb" />
             <Technologies image="python" name="Python" color="#4081B3" />
-            <Technologies image="postgres" name="MySQL" color="#2F6792" />
+            <Technologies image="postgres" name="Postgres" color="#2F6792" />
+            <Technologies image="tailwind" name="Tailwind" color="#35BEF8" />
           </Project>
           <Project
             img={Weather}
