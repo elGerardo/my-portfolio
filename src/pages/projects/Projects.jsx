@@ -53,8 +53,8 @@ const Projects = () => {
           </Project>
           <Project
             img={ToDo}
-            description="A Board App where you can store your tasks. The App is done with NextJs/React as Frontend using Tailwind with Python as Backend."
-            title="ToDo App"
+            description="A Board App where you can store your tasks. This project pretend to be a Trello clone. The App is done with NextJs/React as Frontend using Tailwind with Python as Backend."
+            title="Board App"
             app_url="https://myboardapp.netlify.app/"
             github_url="https://github.com/elGerardo/trello_clone_app"
           >
