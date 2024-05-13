@@ -79,7 +79,6 @@ const AboutMe = () => {
               <Technologies image="nodejs" name="NodeJS" color="#84ce24" />
               <Technologies image="laravel" name="Laravel" color="#e32628" />
               <Technologies image="react" name="React" color="#4cbddc" />
-              <Technologies image="vue" name="Vue" color="#00c590" />
               <Technologies
                 image="typescript"
                 name="TypeScript"

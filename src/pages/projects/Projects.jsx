@@ -6,7 +6,7 @@ import Technologies from "../../components/Technologies";
 
 //images
 import SCPAPI from "/images/scp_api_doc.png";
-import Weather from "/images/weather_app.png";
+import SFMapper from "/images/sf_app.png";
 import ToDo from "/images/todo_app.png";
 
 const Projects = () => {
@@ -64,13 +64,16 @@ const Projects = () => {
             <Technologies image="tailwind" name="Tailwind" color="#35BEF8" />
           </Project>
           <Project
-            img={Weather}
-            description="A simple wheater app done with Vue consuming the Open Weather API."
-            title="Weather App"
-            app_url="https://mycoolwheaterapp.netlify.app/"
-            github_url="https://github.com/elGerardo/weather-app"
+            img={SFMapper}
+            description="This Salesforce Mapper is an app that allows you to get data from your Salesforce Sobjects, the backend is done in ExpressJS to get the data of Salesforce using JSForce"
+            title="Salesforce Mapper"
+            app_url="https://salesforcemapper.netlify.app/"
+            github_url="https://github.com/elGerardo/salesforce-mapper"
           >
-            <Technologies image="vue" name="Vue" color="#3eb883" />
+            <Technologies image="react" name="React" color="#4cbddc" />
+            <Technologies image="nodejs" name="NodeJS" color="#84ce24" />
+            <Technologies image="tailwind" name="Tailwind" color="#35BEF8" />
+            <Technologies image="jsforce" name="JSForce" color="#25A2DA" />
           </Project>
         </div>
       </Container>
