@@ -61,7 +61,7 @@ const AboutMe = () => {
               <Jobs
                 image="multitaskr"
                 jobTitle="Multitaskr"
-                title="Sept/2022 - Currently"
+                title="Sept/2022 - May/2024"
                 description="FullStack Developer"
               />
               <Jobs
