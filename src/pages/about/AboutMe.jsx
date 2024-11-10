@@ -59,15 +59,21 @@ const AboutMe = () => {
             </p>
             <div>
               <Jobs
+                image="logo_gpocsi"
+                jobTitle="Grupo CSI"
+                title="Jun/2024 - Dec/2024"
+                description="FullStack Developer"
+              />
+              <Jobs
                 image="multitaskr"
-                jobTitle="Multitaskr"
-                title="Sept/2022 - May/2024"
+                jobTitle="BajaDevelopers"
+                title="Sept/2022 - Jul/2024"
                 description="FullStack Developer"
               />
               <Jobs
                 image="bajadevelopers"
                 jobTitle="BajaDevelopers"
-                title="Sept/2021 - Jul/2022"
+                title="Sept/2021 - Jun/2022"
                 description="FullStack Developer"
               />
             </div>
