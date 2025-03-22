@@ -61,12 +61,12 @@ const AboutMe = () => {
               <Jobs
                 image="logo_gpocsi"
                 jobTitle="Grupo CSI"
-                title="Jun/2024 - Dec/2024"
+                title="Jun/2024 - Mar/2024"
                 description="FullStack Developer"
               />
               <Jobs
                 image="multitaskr"
-                jobTitle="BajaDevelopers"
+                jobTitle="Multitaskr"
                 title="Sept/2022 - Jul/2024"
                 description="FullStack Developer"
               />
@@ -98,6 +98,8 @@ const AboutMe = () => {
               <Technologies image="tailwind" name="Tailwind" color="#35BEF8" />
               <Technologies image="mysql" name="MySQL" color="#d18434" />
               <Technologies image="postgres" name="Postgres" color="#2F6792" />
+              <Technologies image="docker" name="Docker" color="#079CEC" />
+              <Technologies image="angular" name="Angular" color="#D70230" />
             </div>
           </div>
         </div>

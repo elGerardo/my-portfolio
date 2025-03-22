@@ -70,14 +70,6 @@ const Welcome = () => {
             >
               <img src={Github} alt="githubpic" />
             </a>
-            <a
-              href="https://www.instagram.com/ggerardius/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className={`${style.social_link}`}
-            >
-              <img src={Instagram} alt="instagrampic" />
-            </a>
           </div>
           <div
             className={`${style.take_trip} d-flex justify-content-center align-items-center`}

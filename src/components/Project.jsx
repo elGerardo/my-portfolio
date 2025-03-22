@@ -10,9 +10,9 @@ let Project = ({title, description, app_url, img, children, github_url}) => {
       {children}
       <hr />
       <div className={`d-flex my-2 justify-content-around`}>
-        <a href={`${app_url}`} className={`m-3`} target="_blank" rel="noopener noreferrer">
+        {/*<a href={`${app_url}`} className={`m-3`} target="_blank" rel="noopener noreferrer">
           Go To {title}
-        </a>
+        </a>*/}
         <a className={`${style.github_url}`} href={`${github_url}`} target="_blank" rel="noopener noreferrer">
           <img src={Github} className={`m-3`} />Go To Repo
         </a>

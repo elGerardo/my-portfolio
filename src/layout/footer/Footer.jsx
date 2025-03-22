@@ -10,7 +10,6 @@ import Pdf from "../../assets/files/CV.pdf";
 import Linkedin from "/images/linkedin.png"
 import CV from "/images/cv.png";
 import Github from "/images/github.png";
-import Instagram from "/images/instagram.png";
 
 const Footer = () => {
   const content = (
@@ -36,13 +35,6 @@ const Footer = () => {
             rel="noopener noreferrer"
           >
             <img src={Github} alt="githubpic" />
-          </a>
-          <a
-            href="https://www.instagram.com/ggerardius/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src={Instagram} alt="instagrampic" />
           </a>
         </div>
         <div className={`${style.with_love} text-center`}>
