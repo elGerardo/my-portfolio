@@ -61,7 +61,7 @@ const AboutMe = () => {
               <Jobs
                 image="logo_gpocsi"
                 jobTitle="Grupo CSI"
-                title="Jun/2024 - Mar/2025"
+                title="Jun/2024 - Apr/2025"
                 description="FullStack Developer"
               />
               <Jobs
