@@ -1,56 +1,38 @@
-.container {
-    height: 75vh;
+.content {
+    padding-top: 150px;
+    width: 75%;
 }
 
-.dash_down a {
-    text-decoration: none;
-    color: #FFFFFF;
+.header_content {
+    text-align: left;
 }
 
-.dash_down {
-    position: relative;
-    z-index: 2;
+.image {
+    background-color: rgba(0, 0, 0, 0.150);
+    width: 200px;
+    height: 200px;
 }
 
-.dash_down span {
-    position: absolute;
-    z-index: -1;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    height: 30%;
-    background-color: rgba(0, 0, 0, 0.4);
+.text_info {
+    width: 60%;
 }
 
-.content h1 {
-    font-size: 6rem;
-}
-
-.content p {
-    font-size: 2.4rem;
-}
-
-.content .social_link {
+.social_link {
     padding: 0.75rem;
     border-radius: 0.5rem;
 }
 
-.content img {
+.social_link img {
     width: 2.5rem;
 }
 
-.content .social_link:hover {
-    background-color: rgba(0, 0, 0, 0.150);
-    transition: all ease-in-out 0.1s;
-}
+@media only screen and (max-width: 768px) {
+    .content {
+        padding-top: 150px;
+        width: 100%;
+    }
 
-.take_trip {
-    margin: 10rem 0 0 0;
-}
-
-@media only screen and (max-width: 770px) {
-    .container {
-        padding-top: 1.5rem;
+    .header_content {
+        text-align: center;
     }
 }

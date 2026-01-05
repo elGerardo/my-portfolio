@@ -15,6 +15,7 @@ const AnimationRoute = () => {
     <AnimatePresence>
       <Routes location={location} key={location.pathname}>
         <Route index element={<Welcome />} />
+        {/*<Route index element={<Welcome />} />*/}
         <Route path="about" element={<AboutMe />} />
         <Route path="projects" element={<Projects />} />
       </Routes>
