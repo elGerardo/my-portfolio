@@ -22,9 +22,9 @@ export default function Welcome() {
                     className={`${style.image} shadow-lg rounded-circle`}
                 />
                 <div className="ms-md-5 my-5">
-                    <p className="m-0" style={{fontSize: '18px'}}>Hi, I'm</p>
-                    <h1 className="m-0" style={{fontSize: '36px'}}>Gerardo Villalobos Gamiño</h1>
-                    <p className="m-0" style={{fontSize: '18px'}}>and I'm FullStack Developer ;)</p>
+                    <p className="m-0" style={{ fontSize: '18px' }}>Hi, I'm</p>
+                    <h1 className="m-0" style={{ fontSize: '36px' }}>Gerardo Villalobos Gamiño</h1>
+                    <p className="m-0" style={{ fontSize: '18px' }}>and I'm FullStack Developer ;)</p>
                     <div className="mt-2">
                         <a
                             href="https://linkedin.com/in/gerardo-villalobos-gamiño"
@@ -61,12 +61,14 @@ export default function Welcome() {
                     <p className="fs-5 fst-italic fw-light">I'll promise you'll find something interesting</p>
                 </h2>
                 <p>
-                    I am a young software engineer who is enthusiastic about the world
-                    of development, design and a lover of cats. I graduated from the
-                    Universidad Tecnológica de Tijuana. I began my professional life
-                    before finishing my degree because I had and continue to have the
-                    opportunity to work on technology projects that challenge me to
-                    continue growing and allow me to demonstrate my skills.
+                    I'm a Software Development and Management Engineer passionate about web development and building solutions that make a difference based in Tijuana, México.
+                    I graduated from the Universidad Tecnológica de Tijuana.
+                </p>
+                <p>
+                    Focused my career on web technologies, working on diverse projects ranging from process improvement initiatives to CRM systems that challenge me to grow professionally while allowing me to demonstrate my technical abilities.
+                </p>
+                <p>
+                    I've had the opportunity to work in different companies that challenged me to show what I'm capable of and at the same time learn and improve my soft and tech skills.
                 </p>
                 <h2 className={`mt-5`}>
                     <p className="m-0">Proffesional Experience</p>
