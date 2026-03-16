@@ -8,6 +8,7 @@ import Technologies from "../../components/Technologies";
 import SCPAPI from "/images/scp_api_doc.png";
 import SFMapper from "/images/sf_app.png";
 import ToDo from "/images/todo_app.png";
+import CVReader from "/images/cv_reader.png";
 
 const Projects = () => {
   const content = (
@@ -39,6 +40,18 @@ const Projects = () => {
               Here is my job
             </i>
           </h2>
+          <Project
+            img={CVReader}
+            title="CV Reader"
+            description="A CV Reader application that helps you manage and analyze resumes efficiently with IA."
+            app_url="https://cvreader.netlify.app/"
+            github_url="https://github.com/elGerardo/cv_reader"
+          >
+            <Technologies image="nextjs" name="NextJs" color="#000000" />
+            <Technologies image="Laravel" name="Laravel" color="#e32628" />
+            <Technologies image="mysql" name="MySQL" color="#d18434" />
+            <Technologies image="tailwind" name="Tailwind" color="#35BEF8" />
+          </Project>
           <Project
             img={SCPAPI}
             title="SCP API"

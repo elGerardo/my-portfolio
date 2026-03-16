@@ -7,9 +7,14 @@ import SCPAPI from "/images/scp_api_doc.png";
 import SFMapper from "/images/sf_app.png";
 import ToDo from "/images/todo_app.png";
 import Project from "../../components/Project";
-import Github from "/images/github.png";
+import CVReader from "/images/cv_reader.png";
+
+//images
+import Linkedin from "/images/linkedin.png"
 import CV from "/images/cv.png";
-import Linkedin from "/images/linkedin.png";
+import Github from "/images/github.png";
+
+//files
 import Pdf from "../../assets/files/CV.pdf";
 
 export default function Welcome() {
@@ -25,30 +30,25 @@ export default function Welcome() {
                     <p className="m-0" style={{ fontSize: '18px' }}>Hi, I'm</p>
                     <h1 className="m-0" style={{ fontSize: '36px' }}>Gerardo Villalobos Gamiño</h1>
                     <p className="m-0" style={{ fontSize: '18px' }}>and I'm FullStack Developer ;)</p>
-                    <div className="mt-2">
+
+                    <hr />
+                    <div className={`w-100 justify-content-between`}>
                         <a
                             href="https://linkedin.com/in/gerardo-villalobos-gamiño"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className={`${style.social_link}`}
                         >
-                            <img src={Linkedin} alt="linkedin" />
+                            <img src={Linkedin} alt="githubpic" style={{width: "28px"}} />
                         </a>
-                        <a
-                            href={Pdf}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className={`${style.social_link}`}
-                        >
-                            <img src={CV} alt="cvpic" />
+                        <a href={Pdf} target="_blank" rel="noopener noreferrer" className="mx-4">
+                            <img src={CV} alt="cvpic" style={{width: "28px"}} />
                         </a>
                         <a
                             href="https://github.com/elGerardo"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className={`${style.social_link}`}
                         >
-                            <img src={Github} alt="githubpic" />
+                            <img src={Github} alt="githubpic" style={{width: "28px"}} />
                         </a>
                     </div>
                 </div>
@@ -130,10 +130,19 @@ export default function Welcome() {
                 </h2>
 
                 <Project
+                    img={CVReader}
+                    title="CV Reader"
+                    description="A CV Reader application that helps you manage and analyze resumes efficiently with IA."
+                    app_url="https://cv-reader-ia-app.up.railway.app/"
+                >
+                    <Technologies image="react" name="ReactJS" color="#4cbddc" />
+                    <Technologies image="fastapi" name="FastAPI" color="#05998B" />
+                </Project>
+
+                <Project
                     img={SCPAPI}
                     title="SCP API"
                     description="API based on the SCP Foundation monsters, the API doc was done with NextJs/React and the backend with Laravel."
-                    app_url="https://scpapi.netlify.app/"
                     github_url="https://github.com/elGerardo/scp_api_v1"
                 >
                     <Technologies image="nextjs" name="NextJs" color="#000000" />
@@ -145,25 +154,12 @@ export default function Welcome() {
                     img={ToDo}
                     description="A Board App where you can store your tasks. This project pretend to be a Trello clone. The App is done with NextJs/React as Frontend using Tailwind with Python as Backend."
                     title="Board App"
-                    app_url="https://myboardapp.netlify.app/"
                     github_url="https://github.com/elGerardo/trello_clone_app"
                 >
                     <Technologies image="nextjs" name="NextJs" color="#000000" />
                     <Technologies image="python" name="Python" color="#4081B3" />
                     <Technologies image="postgres" name="Postgres" color="#2F6792" />
                     <Technologies image="tailwind" name="Tailwind" color="#35BEF8" />
-                </Project>
-                <Project
-                    img={SFMapper}
-                    description="This Salesforce Mapper is an app that allows you to get data from your Salesforce Sobjects, the backend is done in ExpressJS to get the data of Salesforce using JSForce"
-                    title="Salesforce Mapper"
-                    app_url="https://salesforcemapper.netlify.app/"
-                    github_url="https://github.com/elGerardo/salesforce-mapper"
-                >
-                    <Technologies image="react" name="React" color="#4cbddc" />
-                    <Technologies image="nodejs" name="NodeJS" color="#84ce24" />
-                    <Technologies image="tailwind" name="Tailwind" color="#35BEF8" />
-                    <Technologies image="jsforce" name="JSForce" color="#25A2DA" />
                 </Project>
             </div>
         </Container>
