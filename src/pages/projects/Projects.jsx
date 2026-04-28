@@ -44,7 +44,7 @@ const Projects = () => {
             img={CVReader}
             title="CV Reader"
             description="A CV Reader application that helps you manage and analyze resumes efficiently with IA."
-            app_url="https://cvreader.netlify.app/"
+            app_url="https://cv-reader-app.up.railway.app/"
             github_url="https://github.com/elGerardo/cv_reader"
           >
             <Technologies image="nextjs" name="NextJs" color="#000000" />
