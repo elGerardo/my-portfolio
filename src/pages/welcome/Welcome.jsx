@@ -133,7 +133,7 @@ export default function Welcome() {
                     img={CVReader}
                     title="CV Reader"
                     description="A CV Reader application that helps you manage and analyze resumes efficiently with IA."
-                    app_url="https://cv-reader-ia-app.up.railway.app/"
+                    app_url="https://cv-reader-app.up.railway.app/"
                 >
                     <Technologies image="react" name="ReactJS" color="#4cbddc" />
                     <Technologies image="fastapi" name="FastAPI" color="#05998B" />
