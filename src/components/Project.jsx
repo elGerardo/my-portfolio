@@ -3,7 +3,7 @@ import React from "/images/tec_logos/react.png";
 import Github from "/images/github.png";
 let Project = ({title, description, app_url, img, children, github_url}) => {
   let content = (
-    <div className={`${style.content} d-inline-block p-3 align-middle shadow rounded`}>
+    <div className={`${style.content} d-inline-block p-3 align-middle rounded`}>
       <img className={`rounded w-100`} src={img} />
       <h2 className={`m-3`}>{title}</h2>
       <p className={`mx-3`}>{description}</p>

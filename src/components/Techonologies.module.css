@@ -1,4 +1,9 @@
-.content img
-{
-    width: 3.5rem;
+.content img {
+    width: 3rem;
+}
+
+.content p {
+    color: #333;
+    margin: 0;
+    font-size: 13px;
 }

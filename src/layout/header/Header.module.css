@@ -1,44 +1,32 @@
-.container
-{
+.container {
     left: 0;
     right: 0;
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
+    background: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-bottom: 1px solid #e8e8e8;
     z-index: 3;
 }
 
-.content
-{
+.content {
     width: 75%;
+    margin: 0 auto;
 }
 
-.container a{
-    background:
-        linear-gradient(
-        to right,
-        #17202900,
-        #17202900
-        ),
-        linear-gradient(
-        to right,
-        white,
-        white,
-        white
-    );
-    background-size: 100% 3px, 0 3px;
-    background-position: 100% 100%, 0 100%;
-    background-repeat: no-repeat;
-    transition: background-size 400ms;
+.brand {
+    font-size: 18px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin: 0;
 }
 
-.container a:hover{
-    background-size: 0 3px, 100% 3px;
+.subtitle {
+    font-size: 13px;
+    color: #777;
 }
 
-@media only screen and (max-width: 620px)
-{
-    .content
-    {
+@media only screen and (max-width: 620px) {
+    .content {
         width: 100%;
     }
 }

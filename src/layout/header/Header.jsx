@@ -1,20 +1,12 @@
 import style from "./Header.module.css"
 import { Container } from "react-bootstrap";
-import { Link } from "react-router-dom";
 
 let Header = () => {
     let content = (
         <div className={`${style.container} py-3 w-100 position-fixed`}>
-            <Container className={`${style.content} d-flex justify-content-between`}>
-            <Link to="/" style={{color:"#FFFFFF", textDecoration:"none"}}><h1>Gerardo</h1></Link>
-            {/*<div>
-                <Link to="about" style={{color:"#FFFFFF", textDecoration:"none"}}>about me</Link>
-                <Link to="projects" style={{color:"#FFFFFF", textDecoration:"none"}} className={`mx-3`}>my projects</Link>
-            </div>*/}
-            <div>
-                <a href="#about" style={{color:"#FFFFFF", textDecoration:"none"}}>about me</a>
-                <a href="#projects" style={{color:"#FFFFFF", textDecoration:"none"}} className={`mx-3`}>my projects</a>
-            </div>
+            <Container className={`${style.content} d-flex justify-content-between align-items-center`}>
+                <h1 className={style.brand}>Gerardo</h1>
+                <span className={style.subtitle}>FullStack Developer</span>
             </Container>
         </div>
     );

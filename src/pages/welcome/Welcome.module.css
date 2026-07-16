@@ -1,38 +1,209 @@
-.content {
-    padding-top: 150px;
-    width: 75%;
+.page {
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
-.header_content {
-    text-align: left;
+/* ── Profile Card ─────────────────────────────────────── */
+.profileCard {
+    background: #ffffff;
+    border-radius: 12px;
+    margin-bottom: 12px;
+    overflow: hidden;
 }
 
-.image {
-    background-color: rgba(0, 0, 0, 0.150);
-    width: 200px;
-    height: 200px;
+.profileHeader {
+    display: flex;
+    align-items: center;
+    padding: 24px 0px 16px;
+    gap: 20px;
 }
 
-.text_info {
-    width: 60%;
+.profilePic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+    border: 1px solid #e8e8e8;
+    background-color: #F4F3F0;
 }
 
-.social_link {
-    padding: 0.75rem;
-    border-radius: 0.5rem;
+.profileInfo {
+    flex: 1;
 }
 
-.social_link img {
-    width: 2.5rem;
+.name {
+    font-size: 22px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin: 0 0 6px;
 }
 
-@media only screen and (max-width: 768px) {
-    .content {
-        padding-top: 150px;
-        width: 100%;
+.roleRow {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.companyLogo {
+    width: 18px;
+    height: 18px;
+    border-radius: 3px;
+    object-fit: cover;
+}
+
+.roleMeta {
+    font-size: 14px;
+    color: #555;
+}
+
+/* ── Social links ─────────────────────────────────────── */
+.socialRow {
+    display: flex;
+    padding: 0 0px 16px;
+    gap: 12px;
+}
+
+.socialLink img {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+    filter: brightness(0) saturate(100%) invert(0%);
+    transition: filter 0.2s;
+}
+
+.socialLink:hover img {
+    filter: brightness(0) saturate(100%) invert(0%);
+}
+
+/* ── Sticky Tab Bar ───────────────────────────────────── */
+.stickyTabs {
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+    background: rgba(243, 242, 239, 0.92);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    margin-bottom: 12px;
+    border-radius: 12px;
+}
+
+/* ── Tab Navigation ───────────────────────────────────── */
+.tabNav {
+    display: flex;
+    padding: 0 16px;
+    overflow-x: auto;
+}
+
+.tab {
+    padding: 12px 16px;
+    border: none;
+    background: none;
+    font-size: 14px;
+    font-weight: 500;
+    color: #777;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    white-space: nowrap;
+    font-family: 'Poppins', sans-serif;
+    transition: color 0.2s;
+}
+
+.tab:hover {
+    color: #1a1a1a;
+}
+
+.activeTab {
+    color: #1a1a1a;
+    border-bottom-color: #1a1a1a;
+}
+
+/* ── Content Card ─────────────────────────────────────── */
+.contentCard {
+    background: #ffffff;
+    padding: 0;
+    overflow: hidden;
+}
+
+.section {
+    padding: 28px 24px;
+    scroll-margin-top: 60px;
+}
+
+.divider {
+    margin: 0 24px;
+    border-color: #f0f0f0;
+}
+
+.sectionTitle {
+    font-size: 18px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin: 0 0 16px;
+}
+
+.bioText {
+    font-size: 14px;
+    color: #444;
+    line-height: 1.7;
+    margin-bottom: 12px;
+}
+
+/* ── Skill tags ───────────────────────────────────────── */
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 16px;
+}
+
+.tag {
+    background: #f3f2ef;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    padding: 4px 14px;
+    font-size: 13px;
+    color: #444;
+}
+
+/* ── Technologies grid ────────────────────────────────── */
+.techGrid {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 8px;
+}
+
+/* ── Projects grid ────────────────────────────────────── */
+.projectsGrid {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 12px;
+}
+
+/* ── Responsive ───────────────────────────────────────── */
+@media (max-width: 600px) {
+    
+
+    .profileHeader {
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 12px;
     }
 
-    .header_content {
-        text-align: center;
+    .roleRow {
+        justify-content: center;
+    }
+
+    .socialRow {
+        justify-content: center;
+    }
+
+    .name {
+        font-size: 20px;
+    }
+
+    .projectsGrid {
+        grid-template-columns: 1fr;
     }
 }

@@ -1,58 +1,50 @@
-.content
-{
+.content {
     transition: all 0.3s ease-in-out;
-    background-color: rgba(0, 0, 0, 0.150);
-    backdrop-filter: blur(5px);
-    margin: 1.5rem;
+    background-color: #ffffff;
+    border: 1px solid #e8e8e8;
+    border-radius: 12px;
     text-align: left;
+    overflow: hidden;
+    width: 100%;
 }
 
-.content:hover
-{
-    background-color: rgba(0, 0, 0, 0.300);
+.content:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    transform: translateY(-2px);
 }
 
-.content img
-{
+.content img {
     width: 4rem;
 }
 
-.content a{
+.content h2 {
+    color: #1a1a1a;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.content p {
+    color: #555;
+    font-size: 13px;
+}
+
+.content a {
     text-decoration: none;
-    color: white;
-    background:
-        linear-gradient(
-        to right,
-        #17202900,
-        #17202900
-        ),
-        linear-gradient(
-        to right,
-        white,
-        white,
-        white
-    );
-    background-size: 100% 3px, 0 3px;
-    background-position: 100% 100%, 0 100%;
-    background-repeat: no-repeat;
-    transition: background-size 400ms;
+    color: #1a1a1a;
+    font-size: 13px;
+    font-weight: 500;
 }
 
-.content a:hover{
-    background-size: 0 3px, 100% 3px;
+.content a:hover {
+    text-decoration: underline;
 }
 
-.github_url img
-{
-    width: 2.5rem;
+.github_url img {
+    width: 2rem;
 }
 
-@media only screen and (max-width: 760px)
-{
-    .content
-    {
-        margin: 1.5rem 0;
+@media only screen and (max-width: 760px) {
+    .content {
         width: 100%;
     }
-    
 }

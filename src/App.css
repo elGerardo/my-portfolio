@@ -6,19 +6,15 @@ html {
 }
 
 body {
-  color: #FFFFFF;
-  background: rgb(0, 0, 0);
-  background: linear-gradient(51deg, rgb(14, 14, 14) 0%, rgb(0, 38, 97, 1) 100%);
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
+  color: #1a1a1a;
   margin: 0 auto;
   font-family: 'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 16px;
   overflow-x: hidden;
+}
+
+.fit-content {
+  width: fit-content;
 }

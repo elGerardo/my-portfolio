@@ -1,6 +1,30 @@
 .container .content img {
-    width: 3rem;
+    width: 18px;
     margin: 0 1.5rem 0 0;
+    filter: brightness(0) saturate(100%) invert(0%);
+}
+
+.container .content img:hover {
+    filter: brightness(0) saturate(100%) invert(0%);
+}
+
+.socialRow {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 8px;
+    font-size: 13px;
+}
+
+.socialRow img {
+    width: 16px !important;
+    margin: 0 !important;
+    filter: brightness(0) saturate(100%) invert(30%);
+}
+
+
+.container p {
+    color: #444;
 }
 
 .content {
@@ -10,40 +34,13 @@
 .with_love {
     align-items: center;
     padding-top: 2.5%;
-}
-
-.swipe_gif {
-    border-radius: 10rem;
-    width: 4rem !important;
-    height: 4rem;
-}
-
-.instructions_container {
-    padding: 1rem;
-    overflow: hidden;
-    height: 5rem;
-}
-
-.instructions_container img {
-    width: 3rem;
-}
-
-.instructions_container .question_icon,
-.instructions_container .instructions_content {
-    transition: all ease-in-out 0.3s;
-}
-
-.instructions_container .instructions_content{
-    vertical-align: center;
+    color: #666;
+    font-size: 13px;
 }
 
 @media only screen and (max-width: 900px) {
     .container {
         text-align: center;
-    }
-
-    .instructions_container .question_icon {
-        margin-left: -90%;
     }
 
     .content {

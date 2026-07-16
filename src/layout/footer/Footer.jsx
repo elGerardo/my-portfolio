@@ -17,25 +17,28 @@ const Footer = () => {
       <hr />
       <div className={`${style.content} w-100 justify-content-between`}>
         <div>
-          <p className={`m-0`}>Let's do something great!</p>
-          <p>Contact me using my social media</p>
-          <a
-            href="https://linkedin.com/in/gerardo-villalobos-gamiño"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src={Linkedin} alt="githubpic" />
-          </a>
-          <a href={Pdf} target="_blank" rel="noopener noreferrer">
-            <img src={CV} alt="cvpic" />
-          </a>
-          <a
-            href="https://github.com/elGerardo"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src={Github} alt="githubpic" />
-          </a>
+          <p style={{ fontSize: "13px" }} className={`m-0`}>Let's do something great!</p>
+          <p  style={{ fontSize: "13px" }}>Contact me using my social media</p>
+          <div className={style.socialRow}>
+            <div className="rounded-pill border text-dark shadow-sm py-2 px-4">
+              <a href="https://linkedin.com/in/gerardo-villalobos-gamiño" target="_blank" rel="noopener noreferrer"
+                className="d-flex align-items-center gap-2 text-dark text-decoration-none">
+                <img src={Linkedin} alt="LinkedIn" /> <p className="m-0">LinkedIn</p>
+              </a>
+            </div>
+            <div className="rounded-pill border text-dark shadow-sm py-2 px-4">
+              <a href={Pdf} target="_blank" rel="noopener noreferrer"
+                className="d-flex align-items-center gap-2 text-dark text-decoration-none">
+                <img src={CV} alt="CV" /> <p className="m-0">CV</p>
+              </a>
+            </div>
+            <div className="rounded-pill border text-dark shadow-sm py-2 px-4">
+              <a href="https://github.com/elGerardo" target="_blank" rel="noopener noreferrer"
+                className="d-flex align-items-center gap-2 text-dark text-decoration-none">
+                <img src={Github} alt="GitHub" /> <p className="m-0">GitHub</p>
+              </a>
+            </div>
+          </div>
         </div>
         <div className={`${style.with_love} text-center`}>
           <p>
