@@ -136,7 +136,7 @@ export default function Welcome() {
                     <Jobs
                         image="logo_gpocsi"
                         jobTitle="Grupo CSI"
-                        title="Jun/2024 - Jul/2025"
+                        title="Jun/2024 - Jul/2026"
                         description="FullStack Developer"
                         jobDescription="Led development of enterprise web applications, improving business processes and implementing CRM systems using modern web technologies."
                     />
