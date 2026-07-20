@@ -136,7 +136,7 @@ export default function Welcome() {
                     <Jobs
                         image="logo_gpocsi"
                         jobTitle="Grupo CSI"
-                        title="Jun/2024 - Dec/2025"
+                        title="Jun/2024 - Jul/2025"
                         description="FullStack Developer"
                         jobDescription="Led development of enterprise web applications, improving business processes and implementing CRM systems using modern web technologies."
                     />
@@ -193,28 +193,6 @@ export default function Welcome() {
                         >
                             <Technologies image="react" name="ReactJS" color="#4cbddc" />
                             <Technologies image="fastapi" name="FastAPI" color="#05998B" />
-                        </Project>
-                        <Project
-                            img={SCPAPI}
-                            title="SCP API"
-                            description="API based on the SCP Foundation monsters, the API doc was done with NextJs/React and the backend with Laravel."
-                            github_url="https://github.com/elGerardo/scp_api_v1"
-                        >
-                            <Technologies image="nextjs" name="NextJs" color="#000000" />
-                            <Technologies image="Laravel" name="Laravel" color="#e32628" />
-                            <Technologies image="mysql" name="MySQL" color="#d18434" />
-                            <Technologies image="tailwind" name="Tailwind" color="#35BEF8" />
-                        </Project>
-                        <Project
-                            img={ToDo}
-                            title="Board App"
-                            description="A Board App where you can store your tasks. This project pretend to be a Trello clone. The App is done with NextJs/React as Frontend using Tailwind with Python as Backend."
-                            github_url="https://github.com/elGerardo/trello_clone_app"
-                        >
-                            <Technologies image="nextjs" name="NextJs" color="#000000" />
-                            <Technologies image="python" name="Python" color="#4081B3" />
-                            <Technologies image="postgres" name="Postgres" color="#2F6792" />
-                            <Technologies image="tailwind" name="Tailwind" color="#35BEF8" />
                         </Project>
                     </div>
                 </div>
